@@ -67,10 +67,10 @@ body {
     max-width: 90%;
 }
 
-/* EL CARRUSEL LUNDANI (EDGE-TO-EDGE) */
+/* EL CARRUSEL ADAPTABLE (Móvil primero) */
 .gallery-showcase {
     width: 100vw;
-    height: 65vh;
+    height: 60vh; /* En móviles ocupa el 60% del alto de la pantalla */
     overflow: hidden;
     position: relative;
     background-color: #f5f5f5;
@@ -78,7 +78,7 @@ body {
 
 .carousel-track {
     display: flex;
-    width: 300vw;
+    width: 300vw; /* Cambia a 400vw o 500vw si agregas más fotos en el futuro */
     height: 100%;
     transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -116,6 +116,34 @@ body {
 .slide-meta h3 {
     font-size: 20px;
     font-weight: 400;
+}
+
+/* ==========================================
+   AJUSTE DE UX PARA ESCRITORIO (Pantallas Grandes)
+   ========================================== */
+@media (min-width: 768px) {
+    .gallery-showcase {
+        height: 450px; /* Altura fija y elegante en computadora para que no domine toda la pantalla */
+        max-width: 1200px; /* Ya no se desborda al infinito, se alinea al contenedor */
+        margin: 0 auto; /* Lo centra perfectamente */
+        border-radius: 12px; /* Un toque editorial sutil para las esquinas en escritorio */
+    }
+    
+    .hero-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+    
+    .main-title {
+        font-size: 64px; /* Título más imponente en escritorio */
+    }
+    
+    .content-body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
 }
 
 /* CUERPO CON MUCHO AIRE VIRTUAL */
