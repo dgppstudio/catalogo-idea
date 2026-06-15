@@ -157,20 +157,45 @@ body {
     }
 }
     
-    .hero-section {
+    /* === PROTECCIÓN DE MÁRGENES EDITORIALES (styles.css) === */
+
+/* En móviles, le damos un colchón interno de 24px a los lados para que respire */
+.hero-section, 
+.content-body {
+    padding: 40px 24px; 
+    width: 100%;
+    box-sizing: border-box; /* Evita que el padding estire el contenedor */
+}
+
+/* El título principal respira con su contenedor */
+.main-title {
+    font-size: 38px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.hero-subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* ==========================================
+   VISTA DE ESCRITORIO (Pantallas Grandes)
+   ========================================== */
+@media (min-width: 768px) {
+    .hero-section, 
+    .content-body {
         max-width: 1200px;
-        margin: 0 auto;
-        padding: 60px 0;
+        margin: 0 auto; /* Centra los bloques en monitores grandes */
+        padding: 60px 40px; /* Más aire en pantallas grandes */
     }
     
     .main-title {
-        font-size: 64px; /* Título más imponente en escritorio */
-    }
-    
-    .content-body {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 80px 0;
+        font-size: 64px; /* Título imponente en computadora */
     }
 }
 
