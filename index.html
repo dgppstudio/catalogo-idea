@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEA Almacenes — Ingeniería Estructural</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">IDEA STUDIO</div>
+        <div class="menu-trigger">
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <h1 class="main-title">Ingeniería para<br>Espacios Masivos</h1>
+        <p class="hero-subtitle">
+            Diseñamos, fabricamos e instalamos sistemas de almacenamiento de alta resistencia. Precisión técnica y optimización de metros cuadrados.
+        </p>
+    </header>
+
+    <section class="gallery-showcase">
+        <div class="carousel-track" id="galleryTrack">
+            <div class="slide">
+                <img src="https://picsum.photos/id/1069/1200/800" alt="Racks de Carga Pesada">
+                <div class="slide-meta">
+                    <span>01 / RACKS DE CARGA</span>
+                    <h3>Sistemas Industriales Pesados</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://picsum.photos/id/1070/1200/800" alt="Entrepisos Modulares">
+                <div class="slide-meta">
+                    <span>02 / ENTREPISOS</span>
+                    <h3>Multiplicación de Superficie Útil</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://picsum.photos/id/1071/1200/800" alt="Sistemas SMW">
+                <div class="slide-meta">
+                    <span>03 / SISTEMAS SMW</span>
+                    <h3>Automatización Mecánica Modular</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content-body">
+        <h2 class="section-heading">Lo que aportamos al almacén</h2>
+        <p class="body-lead">
+            Creamos soluciones robustas para cada proyecto logístico, fusionando la fuerza del acero certificado con el cálculo estructural exacto.
+        </p>
+
+        <div class="specs-grid">
+            <div class="spec-row">
+                <span class="label">Capacidades</span>
+                <span class="value">Hasta 3,500 kg por nivel</span>
+            </div>
+            <div class="spec-row">
+                <span class="label">Certificaciones</span>
+                <span class="value">Normativa AISI / RMI Compliance</span>
+            </div>
+            <div class="spec-row">
+                <span class="label">Acabados</span>
+                <span class="value">Pintura electrostática horneada</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="studio-footer">
+        <div class="footer-cta">
+            <h2>Vamos a optimizar<br>tu espacio</h2>
+            <a href="https://wa.me/TUNUMERO" class="talk-link">Cotizar proyecto →</a>
+        </div>
+        
+        <div class="footer-links">
+            <div class="links-col">
+                <span class="col-title">Soluciones</span>
+                <a href="#">Racks Pesados</a>
+                <a href="#">Entrepisos</a>
+                <a href="#">Estructuras SMW</a>
+            </div>
+            <div class="links-col">
+                <span class="col-title">Contacto</span>
+                <a href="#">WhatsApp</a>
+                <a href="#">Email Corporativo</a>
+                <a href="#">Ubicación Planta</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 IDEA ALMACENES. Soluciones de Acero.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Desplazamiento automático suave para el carrusel inmersivo
+        const track = document.getElementById('galleryTrack');
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % 3;
+            track.style.transform = `translateX(-${index * 100}vw)`;
+        }, 4000);
+    </script>
+</body>
+</html>
