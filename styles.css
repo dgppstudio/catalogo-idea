@@ -1,213 +1,141 @@
-:root {
-    --bg-clean: #ffffff;
-    --text-dark: #000033; /* El color azul institucional de IDEA */
-    --text-muted: #475569;
-    --accent: #eb5e28;    /* Naranja de acento */
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEA — Ingeniería y Diseño de Espacios en Almacenes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="LogoIdea.png" alt="IDEA Almacenes Logo" class="brand-logo-img">
+            <div class="logo-text">
+                <span class="brand-name">Idea</span>
+                <span class="brand-slogan">"CREER ES CREAR"</span>
+            </div>
+        </div>
+        <div class="menu-trigger" id="menuBtn">
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--bg-clean);
-    color: var(--text-dark);
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-}
+    <div class="nav-overlay" id="navOverlay">
+        <div class="overlay-links">
+            <a href="https://wa.me/TUNUMERO" class="menu-link">Racks Pesados</a>
+            <a href="https://wa.me/TUNUMERO" class="menu-link">Entrepisos Modulares</a>
+            <a href="https://wa.me/TUNUMERO" class="menu-link">Estantería de Picking</a>
+            <a href="https://wa.me/TUNUMERO" class="menu-link">Góndolas de Exhibición</a>
+            <a href="https://wa.me/TUNUMERO" class="menu-link">Muebles Sobre Diseño</a>
+            <a href="https://wa.me/TUNUMERO" class="menu-link cta">Cotizar Espacio →</a>
+        </div>
+    </div>
 
-/* NAVBAR CON IMAGEN DE LOGO */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 24px;
-    background: var(--bg-clean);
-    position: relative;
-    z-index: 100;
-}
+    <header class="hero-section">
+        <h1 class="main-title">INGENIERÍA Y DISEÑO DE ESPACIOS EN ALMACENES</h1>
+        <p class="hero-subtitle">
+            Selecciona tu necesidad y descubre nuestra solución profesional. Optimizamos cada metro cúbico de tu planta con sistemas certificados de alta resistencia.
+        </p>
+    </header>
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
+    <section class="gallery-showcase">
+        <div class="category-gallery">
+            
+            <a href="https://wa.me/TUNUMERO" class="gallery-item">
+                <img src="Racks1.png" alt="Racks de Carga Pesada">
+                <div class="item-overlay">
+                    <h3>Racks Pesados</h3>
+                    <span>Soluciones de Carga Pesada →</span>
+                </div>
+            </a>
 
-.brand-logo-img {
-    height: 56px; /* Dimensión balanceada para el logo oficial */
-    width: auto;
-    object-fit: contain;
-}
+            <a href="https://wa.me/TUNUMERO" class="gallery-item">
+                <img src="Entrepisos1.png" alt="Entrepisos Modulares">
+                <div class="item-overlay">
+                    <h3>Entrepisos</h3>
+                    <span>Optimización de Espacio y Altura →</span>
+                </div>
+            </a>
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-}
+            <a href="https://wa.me/TUNUMERO" class="gallery-item">
+                <img src="Estantería1.png" alt="Estantería de Picking">
+                <div class="item-overlay">
+                    <h3>Estantería</h3>
+                    <span>Organización de Picking →</span>
+                </div>
+            </a>
 
-.brand-name {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 26px;
-    color: var(--text-dark);
-}
+            <a href="https://wa.me/TUNUMERO" class="gallery-item">
+                <img src="Góndolas1.png" alt="Góndolas de Exhibición">
+                <div class="item-overlay">
+                    <h3>Góndolas</h3>
+                    <span>Exhibición y Punto de Venta →</span>
+                </div>
+            </a>
 
-.brand-slogan {
-    font-size: 7px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: var(--text-muted);
-    margin-top: 2px;
-}
+            <a href="https://wa.me/TUNUMERO" class="gallery-item">
+                <img src="Muebles1.png" alt="Muebles sobre diseño">
+                <div class="item-overlay">
+                    <h3>Muebles Especiales</h3>
+                    <span>Ingeniería Especializada →</span>
+                </div>
+            </a>
+            
+            <div class="gallery-item duplicate">
+                <img src="Racks1.png" alt="">
+                <div class="item-overlay">
+                    <h3>Racks Pesados</h3>
+                    <span>Soluciones de Carga Pesada →</span>
+                </div>
+            </div>
+            <div class="gallery-item duplicate">
+                <img src="Entrepisos1.png" alt="">
+                <div class="item-overlay">
+                    <h3>Entrepisos</h3>
+                    <span>Optimización de Espacio y Altura →</span>
+                </div>
+            </div>
+            <div class="gallery-item duplicate">
+                <img src="Estantería1.png" alt="">
+                <div class="item-overlay">
+                    <h3>Estantería</h3>
+                    <span>Organización de Picking →</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* BOTÓN DE MENÚ HAMBURGUESA */
-.menu-trigger {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    cursor: pointer;
-    width: 30px;
-}
+    <footer class="studio-footer">
+        <div class="footer-cta">
+            <h2>Vamos a optimizar<br>tu espacio</h2>
+            <a href="https://wa.me/TUNUMERO" class="talk-link">Iniciar cotización profesional →</a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 IDEA ALMACENES. "Creer es crear".</p>
+        </div>
+    </footer>
 
-.menu-trigger .line {
-    width: 100%;
-    height: 2px;
-    background-color: var(--text-dark);
-    transition: transform 0.3s ease;
-}
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navOverlay = document.getElementById('navOverlay');
+        const menuLinks = document.querySelectorAll('.menu-link');
 
-.menu-trigger.active .line:nth-child(1) { transform: translateY(4.5px) rotate(45deg); }
-.menu-trigger.active .line:nth-child(2) { transform: translateY(-4.5px) rotate(-45deg); }
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            navOverlay.classList.toggle('open');
+        });
 
-/* NAVEGACIÓN OVERLAY */
-.nav-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--bg-clean);
-    z-index: 90;
-    display: flex;
-    align-items: center;
-    padding: 40px;
-    transform: translateY(-100%);
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.nav-overlay.open { transform: translateY(0); }
-.overlay-links { display: flex; flex-direction: column; gap: 20px; }
-.menu-link {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--text-dark);
-    text-decoration: none;
-    letter-spacing: -1px;
-}
-.menu-link.cta { color: var(--accent); font-size: 22px; }
-
-/* PORTADA HERO */
-.hero-section {
-    padding: 30px 24px;
-    width: 100%;
-}
-
-.main-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 1.1;
-    letter-spacing: -1px;
-    margin-bottom: 24px;
-}
-
-.hero-subtitle {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-muted);
-}
-
-/* REGLAS DEL MOSAICO CONTINUO SIN MÁRGENES */
-.gallery-showcase {
-    width: 100vw;
-    height: 440px;
-    overflow: hidden;
-    position: relative;
-    margin: 40px 0;
-}
-
-.category-gallery {
-    display: flex;
-    width: calc(35vw * 8); 
-    height: 100%;
-    animation: scrollInfinite 28s linear infinite;
-}
-
-.gallery-item {
-    position: relative;
-    width: 35vw;
-    height: 100%;
-    overflow: hidden;
-    display: block;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 35px 24px;
-    background: linear-gradient(transparent, rgba(0,0,51,0.85));
-    color: #ffffff;
-}
-
-.item-overlay h3 { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 4px; }
-.item-overlay span { font-size: 12px; opacity: 0.9; }
-
-@keyframes scrollInfinite {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-175vw); } /* 5 fotos base * 35vw */
-}
-
-/* FOOTER */
-.studio-footer { background-color: #f8fafc; padding: 60px 24px; }
-.footer-cta h2 { font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 900; margin-bottom: 16px; }
-.talk-link {
-    display: inline-block;
-    color: var(--text-dark);
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
-    border-bottom: 2px solid var(--text-dark);
-    padding-bottom: 4px;
-}
-.footer-bottom { font-size: 12px; color: var(--text-muted); margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
-
-/* RESPONSIVO ESCRITORIO */
-@media (min-width: 768px) {
-    .hero-section { max-width: 1200px; margin: 0 auto; padding: 80px 40px; }
-    .main-title { font-size: 68px; }
-    .menu-link { font-size: 52px; }
-}
-
-/* RESPONSIVO SMARTPHONE */
-@media (max-width: 767px) {
-    .gallery-showcase { height: 290px; }
-    .category-gallery { width: calc(75vw * 8); }
-    .gallery-item { width: 75vw; }
-    @keyframes scrollInfinite {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-375vw); } /* 5 * 75vw */
-    }
-}
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                navOverlay.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+</html>
