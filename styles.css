@@ -179,7 +179,7 @@ body {
 
 /* RESPONSIVO ESCRITORIO */
 @media (min-width: 768px) {
-    .hero-section { max-width: 1200px; margin: 0 auto; padding: 60px 40px; }
+    .hero-section { margin: 0 auto; padding: 60px 40px; }
     .main-title { font-size: 68px; }
     .menu-link { font-size: 52px; }
 }
