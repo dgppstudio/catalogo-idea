@@ -3,135 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDEA Almacenes — Ingeniería Estructural</title>
+    <title>IDEA — Ingeniería y Diseño de Espacios en Almacenes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..0,700;1,300..0,700&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="nav-brand">IDEA STUDIO</div>
-        <div class="menu-trigger">
+        <div class="logo-container">
+            <div class="logo-isometric">
+                <span class="box-face face-top"></span>
+                <span class="box-face face-left"></span>
+                <span class="box-face face-right"></span>
+            </div>
+            <div class="logo-text">
+                <span class="brand-name">Idea</span>
+                <span class="brand-slogan">"CREER ES CREAR"</span>
+            </div>
+        </div>
+        <div class="menu-trigger" id="menuBtn">
             <span class="line"></span>
             <span class="line"></span>
         </div>
     </nav>
 
+    <div class="nav-overlay" id="navOverlay">
+        <div class="overlay-links">
+            <a href="#racks" class="menu-link">Racks Pesados</a>
+            <a href="#entrepisos" class="menu-link">Entrepisos Modulares</a>
+            <a href="#estanteria" class="menu-link">Estantería de Picking</a>
+            <a href="#gondolas" class="menu-link">Góndolas de Exhibición</a>
+            <a href="#muebles" class="menu-link">Muebles Sobre Diseño</a>
+            <a href="https://wa.me/TUNUMERO" class="menu-link cta">Cotizar Espacio →</a>
+        </div>
+    </div>
+
     <header class="hero-section">
-        <h1 class="main-title">Ingeniería para<br>Espacios Masivos</h1>
+        <h1 class="main-title">INGENIERÍA Y DISEÑO DE ESPACIOS EN ALMACENES</h1>
         <p class="hero-subtitle">
-            Diseñamos, fabricamos e instalamos sistemas de almacenamiento de alta resistencia. Precisión técnica y optimización de metros cuadrados.
+            Selecciona tu necesidad y descubre nuestra solución profesional. Optimizamos cada metro cúbico de tu planta con sistemas certificados de alta resistencia.
         </p>
     </header>
 
     <section class="gallery-showcase">
-    <div class="category-gallery" id="categoryGallery">
-        
-        <a href="#racks" class="gallery-item">
-            <img src="https://picsum.photos/id/1069/600/400" alt="Racks de Carga Pesada">
-            <div class="item-overlay">
-                <h3>Racks Pesados</h3>
-                <span>Ingeniería Estructural →</span>
-            </div>
-        </a>
+        <div class="category-gallery">
+            
+            <a href="#racks" class="gallery-item">
+                <img src="https://picsum.photos/id/1069/600/400" alt="Racks de Carga Pesada">
+                <div class="item-overlay">
+                    <h3>Racks Pesados</h3>
+                    <span>Soluciones de Carga Pesada →</span>
+                </div>
+            </a>
 
-        <a href="#entrepisos" class="gallery-item">
-            <img src="https://picsum.photos/id/1070/600/400" alt="Entrepisos Modulares">
-            <div class="item-overlay">
-                <h3>Entrepisos</h3>
-                <span>Duplicación de Superficie →</span>
-            </div>
-        </a>
+            <a href="#entrepisos" class="gallery-item">
+                <img src="https://picsum.photos/id/1070/600/400" alt="Entrepisos Modulares">
+                <div class="item-overlay">
+                    <h3>Entrepisos</h3>
+                    <span>Optimización de Espacio y Altura →</span>
+                </div>
+            </a>
 
-        <a href="#smw" class="gallery-item">
-            <img src="https://picsum.photos/id/1071/600/400" alt="Sistemas SMW Automatizados">
-            <div class="item-overlay">
-                <h3>Sistemas SMW</h3>
-                <span>Automatización Mecánica →</span>
-            </div>
-        </a>
+            <a href="#estanteria" class="gallery-item">
+                <img src="https://picsum.photos/id/1071/600/400" alt="Estantería de Picking">
+                <div class="item-overlay">
+                    <h3>Estantería</h3>
+                    <span>Organización de Picking →</span>
+                </div>
+            </a>
 
-        <a href="#estanteria" class="gallery-item">
-            <img src="https://picsum.photos/id/1072/600/400" alt="Sistemas de Estantería Ligera">
-            <div class="item-overlay">
-                <h3>Estantería Ligera</h3>
-                <span>Manejo de Materiales →</span>
+            <a href="#gondolas" class="gallery-item">
+                <img src="https://picsum.photos/id/1072/600/400" alt="Góndolas e Inmuebles">
+                <div class="item-overlay">
+                    <h3>Góndolas</h3>
+                    <span>Exhibición y Punto de Venta →</span>
+                </div>
+            </a>
+
+            <a href="#muebles" class="gallery-item">
+                <img src="https://picsum.photos/id/1073/600/400" alt="Muebles sobre diseño">
+                <div class="item-overlay">
+                    <h3>Muebles Especiales</h3>
+                    <span>Ingeniería Especializada →</span>
+                </div>
+            </a>
+            
+            <div class="gallery-item duplicate">
+                <img src="https://picsum.photos/id/1069/600/400" alt="">
+                <div class="item-overlay"><h3>Racks Pesados</h3></div>
             </div>
-        </a>
-        
-        <div class="gallery-item duplicate">
-            <img src="https://picsum.photos/id/1069/600/400" alt="Racks de Carga Pesada">
-            <div class="item-overlay"><h3>Racks Pesados</h3><span>Ingeniería Estructural →</span></div>
+            <div class="gallery-item duplicate">
+                <img src="https://picsum.photos/id/1070/600/400" alt="">
+                <div class="item-overlay"><h3>Entrepisos</h3></div>
+            </div>
+            <div class="gallery-item duplicate">
+                <img src="https://picsum.photos/id/1071/600/400" alt="">
+                <div class="item-overlay"><h3>Estantería</h3></div>
+            </div>
         </div>
-        <div class="gallery-item duplicate">
-            <img src="https://picsum.photos/id/1070/600/400" alt="Entrepisos Modulares">
-            <div class="item-overlay"><h3>Entrepisos</h3><span>Duplicación de Superficie →</span></div>
-        </div>
-        <div class="gallery-item duplicate">
-            <img src="https://picsum.photos/id/1071/600/400" alt="Sistemas SMW Automatizados">
-            <div class="item-overlay"><h3>Sistemas SMW</h3><span>Automatización Mecánica →</span></div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <main class="content-body">
-        <h2 class="section-heading">Lo que aportamos al almacén</h2>
-        <p class="body-lead">
-            Creamos soluciones robustas para cada proyecto logístico, fusionando la fuerza del acero certificado con el cálculo estructural exacto.
-        </p>
+        
+        <section id="racks" class="product-block">
+            <span class="block-tag">01 / SOLUCIONES DE CARGA PESADA</span>
+            <h2 class="section-heading">Racks Pesados</h2>
+            <p class="body-lead">
+                Estructuras robustas calculadas analíticamente para el almacenamiento seguro de paletas y mercancías de gran volumen. Rigidez y durabilidad industrial certificada.
+            </p>
+        </section>
 
-        <div class="specs-grid">
-            <div class="spec-row">
-                <span class="label">Capacidades</span>
-                <span class="value">Hasta 3,500 kg por nivel</span>
-            </div>
-            <div class="spec-row">
-                <span class="label">Certificaciones</span>
-                <span class="value">Normativa AISI / RMI Compliance</span>
-            </div>
-            <div class="spec-row">
-                <span class="label">Acabados</span>
-                <span class="value">Pintura electrostática horneada</span>
-            </div>
-        </div>
+        <section id="entrepisos" class="product-block">
+            <span class="block-tag">02 / OPTIMIZACIÓN DE ALTURA</span>
+            <h2 class="section-heading">Entrepisos Modulares</h2>
+            <p class="body-lead">
+                Duplica o triplica la superficie útil de tu nave industrial aprovechando el espacio vertical. Sistemas autosoportados de rápido montaje y sin necesidad de obra civil estructural.
+            </p>
+        </section>
+
+        <section id="estanteria" class="product-block">
+            <span class="block-tag">03 / ORGANIZACIÓN DE PICKING</span>
+            <h2 class="section-heading">Estantería Ligera</h2>
+            <p class="body-lead">
+                Configuraciones modulares eficientes diseñadas para el manejo manual de materiales, archivo y líneas operativas de surtido rápido o e-commerce.
+            </p>
+        </section>
+
+        <section id="gondolas" class="product-block">
+            <span class="block-tag">04 / EXHIBICIÓN Y PUNTO DE VENTA</span>
+            <h2 class="section-heading">Góndolas comerciales</h2>
+            <p class="body-lead">
+                Sistemas de exhibición versátiles para piso de venta. Balance perfecto entre capacidad de carga estética comercial y durabilidad estructural.
+            </p>
+        </section>
+
+        <section id="muebles" class="product-block">
+            <span class="block-tag">05 / INGENIERÍA ESPECIALIZADA</span>
+            <h2 class="section-heading">Muebles sobre Diseño</h2>
+            <p class="body-lead">
+                Desarrollo de mobiliario técnico especializado bajo especificaciones milimétricas de diseño y necesidades de operación logística particulares.
+            </p>
+        </section>
+
     </main>
 
     <footer class="studio-footer">
         <div class="footer-cta">
             <h2>Vamos a optimizar<br>tu espacio</h2>
-            <a href="https://wa.me/TUNUMERO" class="talk-link">Cotizar proyecto →</a>
-        </div>
-        
-        <div class="footer-links">
-            <div class="links-col">
-                <span class="col-title">Soluciones</span>
-                <a href="#">Racks Pesados</a>
-                <a href="#">Entrepisos</a>
-                <a href="#">Estructuras SMW</a>
-            </div>
-            <div class="links-col">
-                <span class="col-title">Contacto</span>
-                <a href="#">WhatsApp</a>
-                <a href="#">Email Corporativo</a>
-                <a href="#">Ubicación Planta</a>
-            </div>
+            <a href="https://wa.me/TUNUMERO" class="talk-link">Iniciar cotización profesional →</a>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 IDEA ALMACENES. Soluciones de Acero.</p>
+            <p>© 2026 IDEA ALMACENES. "Creer es crear".</p>
         </div>
     </footer>
 
-   <script>
-    // Secuencia automática de fotos (Desplazamiento suave)
-    const track = document.getElementById('galleryTrack');
-    let index = 0;
-    const totalSlides = 3; // Si subes una cuarta foto, cambia este número a 4
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navOverlay = document.getElementById('navOverlay');
+        const menuLinks = document.querySelectorAll('.menu-link');
 
-    setInterval(() => {
-        index = (index + 1) % totalSlides;
-        track.style.transform = `translateX(-${index * 100}vw)`;
-    }, 4000); // Cambia cada 4 segundos
-</script>
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            navOverlay.classList.toggle('open');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                navOverlay.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 </html>
