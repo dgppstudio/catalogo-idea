@@ -43,21 +43,6 @@ body {
     object-fit: contain;
 }
 
-.brand-name {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 26px;
-    color: var(--text-dark);
-}
-
-.brand-slogan {
-    font-size: 7px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: var(--text-muted);
-    margin-top: 2px;
-}
-
 /* BOTÓN HAMBURGUESA */
 .menu-trigger {
     display: flex;
@@ -115,6 +100,7 @@ body {
     line-height: 1.1;
     letter-spacing: -1px;
     margin-bottom: 24px;
+    color: var(--text-dark); /* <--- Esto asegura que sea azul */
 }
 
 .hero-subtitle {
@@ -145,6 +131,8 @@ body {
     height: 100%;
     overflow: hidden;
     display: block;
+    /* Añade esta línea: 1 píxel de grosor, sólida, y en color gris claro o blanco */
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .gallery-item img {
