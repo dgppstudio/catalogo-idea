@@ -133,7 +133,7 @@ body {
     overflow: hidden;
     display: block;
     /* Añade esta línea: 1 píxel de grosor, sólida, y en color gris claro o blanco */
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0);
 }
 
 .gallery-item img {
