@@ -1,8 +1,10 @@
 :root {
     --bg-clean: #ffffff;
-    --bg-light-gray: #f1f5f9; /* El gris claro premium que le gustó de la referencia */
+    --bg-light-gray: #f6f6f6; /* El gris claro premium que le gustó de la referencia */
     --text-dark: #000033;     /* Azul institucional IDEA */
     --text-muted: #475569;
+    --text-dark-gray: #666666;   /* El gris obscuro */
+    --text-medium-gray: #999999;   /* El gris claro */
     --accent: #eb5e28;        /* Naranja de acento */
 }
 
