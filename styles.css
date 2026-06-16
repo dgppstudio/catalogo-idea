@@ -1,8 +1,8 @@
 :root {
     --bg-clean: #ffffff;
-    --text-dark: #000033; /* El azul marino oscuro de IDEA */
+    --text-dark: #000033; /* El color azul institucional de IDEA */
     --text-muted: #475569;
-    --accent: #eb5e28;    /* El naranja institucional */
+    --accent: #eb5e28;    /* Naranja de acento */
 }
 
 * {
@@ -11,19 +11,15 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: 'Open Sans', sans-serif; /* Tu tipografía de cuerpo */
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--bg-clean);
     color: var(--text-dark);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
-/* NAVBAR CON LOGOTIPO ISOMÉTRICO EN CSS */
+/* NAVBAR CON IMAGEN DE LOGO */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -37,44 +33,37 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
 }
 
-/* Construcción limpia del isotipo de los bloques de IDEA */
-.logo-isometric {
-    position: relative;
-    width: 28px;
-    height: 30px;
-    transform: rotate(-30deg) skewX(10deg);
+.brand-logo-img {
+    height: 42px; /* Dimensión balanceada para el logo oficial */
+    width: auto;
+    object-fit: contain;
 }
-.box-face {
-    position: absolute;
-    background: var(--text-dark);
-}
-.face-top { width: 16px; height: 16px; top: 0; left: 6px; transform: rotate(45deg); background: #1e293b;}
-.face-left { width: 11px; height: 18px; top: 11px; left: 1px; background: var(--text-dark); }
-.face-right { width: 11px; height: 18px; top: 11px; left: 13px; background: var(--accent); }
 
 .logo-text {
     display: flex;
     flex-direction: column;
     line-height: 1;
 }
+
 .brand-name {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-size: 26px;
     color: var(--text-dark);
 }
+
 .brand-slogan {
     font-size: 7px;
     font-weight: 700;
     letter-spacing: 1.5px;
     color: var(--text-muted);
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
-/* BOTÓN HAMBURGUESA */
+/* BOTÓN DE MENÚ HAMBURGUESA */
 .menu-trigger {
     display: flex;
     flex-direction: column;
@@ -82,16 +71,18 @@ body {
     cursor: pointer;
     width: 30px;
 }
+
 .menu-trigger .line {
     width: 100%;
     height: 2px;
     background-color: var(--text-dark);
     transition: transform 0.3s ease;
 }
+
 .menu-trigger.active .line:nth-child(1) { transform: translateY(4.5px) rotate(45deg); }
 .menu-trigger.active .line:nth-child(2) { transform: translateY(-4.5px) rotate(-45deg); }
 
-/* NAVIGATION OVERLAY */
+/* NAVEGACIÓN OVERLAY */
 .nav-overlay {
     position: fixed;
     top: 0;
@@ -106,6 +97,7 @@ body {
     transform: translateY(-100%);
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .nav-overlay.open { transform: translateY(0); }
 .overlay-links { display: flex; flex-direction: column; gap: 20px; }
 .menu-link {
@@ -118,40 +110,43 @@ body {
 }
 .menu-link.cta { color: var(--accent); font-size: 22px; }
 
-/* TEXTOS EDITORIALES (MÁS GRANDES Y RESPIRADOS) */
-.hero-section, .content-body {
-    padding: 50px 24px;
+/* PORTADA HERO */
+.hero-section {
+    padding: 50px 24px 30px 24px;
     width: 100%;
 }
+
 .main-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    font-size: 40px; /* Letras grandes e imponentes como tu portada */
+    font-size: 40px;
     line-height: 1.1;
     letter-spacing: -1px;
     margin-bottom: 24px;
-    text-transform: uppercase;
 }
+
 .hero-subtitle {
-    font-size: 16px; /* Subido de 14px a 16px para mejor lectura móvil */
+    font-size: 16px;
     line-height: 1.6;
     color: var(--text-muted);
 }
 
-/* CARRUSEL INFINITO DE CATEGORÍAS */
+/* REGLAS DEL MOSAICO CONTINUO SIN MÁRGENES */
 .gallery-showcase {
     width: 100vw;
-    height: 420px;
+    height: 440px;
     overflow: hidden;
     position: relative;
-    margin: 30px 0;
+    margin: 40px 0;
 }
+
 .category-gallery {
     display: flex;
-    width: calc(35vw * 8); /* Ajustado para contener las 5 originales + 3 copias */
+    width: calc(35vw * 8); 
     height: 100%;
     animation: scrollInfinite 28s linear infinite;
 }
+
 .gallery-item {
     position: relative;
     width: 35vw;
@@ -159,11 +154,13 @@ body {
     overflow: hidden;
     display: block;
 }
+
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .item-overlay {
     position: absolute;
     bottom: 0;
@@ -173,38 +170,13 @@ body {
     background: linear-gradient(transparent, rgba(0,0,51,0.85));
     color: #ffffff;
 }
+
 .item-overlay h3 { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 4px; }
 .item-overlay span { font-size: 12px; opacity: 0.9; }
 
 @keyframes scrollInfinite {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-175vw); } /* Recorre exactamente las 5 fotos base (5 * 35vw) */
-}
-
-/* BLOQUES DE PRODUCTO MULTIPLICADOS */
-.product-block {
-    padding: 50px 0;
-    border-bottom: 1px solid #e2e8f0;
-}
-.block-tag {
-    font-family: 'Poppins', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: 1.5px;
-    display: block;
-    margin-bottom: 12px;
-}
-.section-heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-.body-lead {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-muted);
+    100% { transform: translateX(-175vw); } /* 5 fotos base * 35vw */
 }
 
 /* FOOTER */
@@ -222,15 +194,16 @@ body {
 }
 .footer-bottom { font-size: 12px; color: var(--text-muted); margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
 
-/* CORRECCIÓN UX PARA MONITOR ESCRITORIO */
+/* RESPONSIVO ESCRITORIO */
 @media (min-width: 768px) {
-    .hero-section, .content-body { max-width: 1200px; margin: 0 auto; padding: 80px 40px; }
+    .hero-section { max-width: 1200px; margin: 0 auto; padding: 80px 40px; }
     .main-title { font-size: 68px; }
     .menu-link { font-size: 52px; }
 }
 
+/* RESPONSIVO SMARTPHONE */
 @media (max-width: 767px) {
-    .gallery-showcase { height: 280px; }
+    .gallery-showcase { height: 290px; }
     .category-gallery { width: calc(75vw * 8); }
     .gallery-item { width: 75vw; }
     @keyframes scrollInfinite {
