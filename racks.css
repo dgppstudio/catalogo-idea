@@ -1,0 +1,134 @@
+:root {
+    --bg-clean: #ffffff;
+    --bg-light-gray: #f1f5f9;
+    --text-dark: #000033; /* Tu azul */
+    --text-muted: #475569;
+    --accent: #eb5e28;    /* Tu naranja */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-clean);
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* NAVBAR DE SECCIÓN */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 24px;
+    background: var(--bg-clean);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.brand-logo-img { height: 56px; width: auto; }
+
+.back-home-link {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.product-page-container {
+    padding: 40px 24px;
+    max-width: 900px; /* Más estrecho estilo editorial para lectura cómoda */
+    margin: 0 auto;
+}
+
+.block-tag {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.product-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.body-lead { font-size: 16px; line-height: 1.6; color: var(--text-muted); margin-bottom: 35px; }
+
+/* CONTENEDOR DE VIDEO */
+.video-container-showcase {
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.product-video { width: 100%; height: 100%; object-fit: cover; }
+
+.product-details h2 { font-family: 'Poppins', sans-serif; font-size: 24px; margin-bottom: 12px; }
+.product-details p { font-size: 15px; line-height: 1.6; color: var(--text-muted); margin-bottom: 40px; }
+
+/* LÍNEA DE PROCESO HORIZONTAL */
+.process-timeline-container { position: relative; margin: 50px 0; }
+.timeline-line { position: absolute; top: 22px; left: 0; width: 100%; height: 1px; background-color: #cbd5e1; z-index: 1; }
+.timeline-steps { display: flex; justify-content: space-between; position: relative; z-index: 2; gap: 20px; }
+.step-item { flex: 1; background-color: var(--bg-clean); }
+.step-num { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 13px; color: var(--accent); display: block; margin-bottom: 20px; }
+.step-item h4 { font-family: 'Poppins', sans-serif; font-size: 15px; margin-bottom: 6px; }
+.step-item p { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
+
+/* TABLA DE DESCARGAS (UX FIEL A TU CAPTURA DE WHATSAPP) */
+.downloads-section { margin-top: 60px; padding-top: 40px; border-top: 1px solid #e2e8f0; }
+.downloads-heading { font-family: 'Poppins', sans-serif; font-size: 22px; margin-bottom: 25px; }
+.download-table { display: flex; flex-direction: column; gap: 12px; }
+
+.download-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-light-gray);
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.download-row:hover { background-color: #e2e8f0; }
+
+.doc-info { display: flex; align-items: center; gap: 16px; }
+.doc-icon { font-size: 24px; }
+.doc-info h4 { font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; }
+.doc-info p { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.btn-download {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid var(--text-dark);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+.btn-download:hover { background-color: var(--text-dark); color: #fff; }
+
+/* FOOTER */
+.studio-footer { background-color: var(--bg-light-gray); padding: 50px 24px; margin-top: 80px; text-align: center; }
+.footer-cta h2 { font-family: 'Poppins', sans-serif; font-size: 28px; margin-bottom: 16px; }
+.talk-link { display: inline-block; color: var(--text-dark); font-family: 'Poppins', sans-serif; font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--text-dark); padding-bottom: 2px; }
+
+/* AJUSTES MÓVIL */
+@media (max-width: 767px) {
+    .video-container-showcase { height: 220px; }
+    .timeline-steps { flex-direction: column; gap: 25px; }
+    .timeline-line { display: none; }
+    .step-num { margin-bottom: 4px; }
+    .download-row { flex-direction: column; align-items: flex-start; gap: 15px; }
+    .btn-download { width: 100%; text-align: center; }
+}
