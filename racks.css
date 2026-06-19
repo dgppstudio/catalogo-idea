@@ -1,9 +1,9 @@
 :root {
     --bg-clean: #ffffff;
     --bg-light-gray: #f1f5f9; /* Tu gris claro editorial */
-    --text-dark: #000033;     /* Tu azul IDEA */
+    --text-dark: #000033;     /* Azul institucional IDEA */
     --text-muted: #475569;
-    --accent: #eb5e28;        /* Tu naranja de acento */
+    --accent: #eb5e28;        /* Naranja de acento */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,10 +27,10 @@ body {
 .brand-logo-img { height: 56px; width: auto; }
 .back-home-link { font-family: 'Poppins', sans-serif; color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 600; }
 
-/* CONTENEDOR PRINCIPAL */
+/* CONTENEDOR PRINCIPAL TEXTOS COMPACTOS */
 .product-page-container {
     padding: 30px 24px;
-    max-width: 800px; /* Ancho ajustado estilo lectura de artículo premium */
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -54,22 +54,22 @@ body {
 
 .body-lead { font-size: 16px; line-height: 1.6; color: var(--text-muted); margin-bottom: 35px; }
 
-/* CONTENEDOR DE VIDEO VERTICAL (9:16) */
+/* CONTENEDOR VIDEO VERTICAL (9:16) CONTROLADO */
 .video-container-vertical {
     width: 100%;
-    max-width: 400px; /* Controla el ancho en escritorio para mantener el formato smartphone */
+    max-width: 360px; /* Ancho idóneo para formato vertical smartphone en cualquier pantalla */
     margin: 0 auto 40px auto;
-    aspect-ratio: 9 / 16; /* Fuerza la proporción del video del cel */
+    aspect-ratio: 9 / 16;
     background-color: #000;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,51,0.08);
+    box-shadow: 0 15px 35px rgba(0,0,51,0.06);
 }
 .product-video { width: 100%; height: 100%; object-fit: cover; }
 
-/* CUADRÍCULA DE DESCRIPCIÓN E IMAGEN */
+/* CUADRÍCULA DESCRIPCIÓN E IMAGEN */
 .product-showcase-grid {
-    margin: 60px 0;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -79,14 +79,14 @@ body {
 
 .showcase-image-wrapper {
     width: 100%;
-    height: 300px;
+    height: 320px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
 }
 .product-showcase-img { width: 100%; height: 100%; object-fit: cover; }
 
-/* LÍNEA DE PROCESO HORIZONTAL */
+/* LÍNEA DE PROCESO HORIZONTAL POR PASOS */
 .process-timeline-container { position: relative; margin: 60px 0; }
 .timeline-line { position: absolute; top: 22px; left: 0; width: 100%; height: 1px; background-color: #cbd5e1; z-index: 1; }
 .timeline-steps { display: flex; justify-content: space-between; position: relative; z-index: 2; gap: 20px; }
@@ -95,7 +95,7 @@ body {
 .step-item h4 { font-family: 'Poppins', sans-serif; font-size: 15px; color: var(--text-dark); margin-bottom: 6px; }
 .step-item p { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
 
-/* TABLA DE DESCARGAS (UX REFERENCIA) */
+/* TABLA DE DESCARGAS EDITORIAL GRIS */
 .downloads-section { margin-top: 60px; padding-top: 40px; border-top: 1px solid #e2e8f0; }
 .downloads-heading { font-family: 'Poppins', sans-serif; font-size: 22px; color: var(--text-dark); margin-bottom: 25px; }
 .download-table { display: flex; flex-direction: column; }
@@ -124,19 +124,19 @@ body {
 }
 .btn-download:hover { background-color: var(--text-dark); color: #fff; }
 
-/* FOOTER */
+/* FOOTER GRIS CLARO EDITORIAL */
 .studio-footer { background-color: var(--bg-light-gray); padding: 50px 24px; margin-top: 80px; text-align: center; }
 .footer-cta h2 { font-family: 'Poppins', sans-serif; font-size: 28px; color: var(--text-dark); margin-bottom: 16px; }
 .talk-link { display: inline-block; color: var(--text-dark); font-family: 'Poppins', sans-serif; font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--text-dark); padding-bottom: 2px; }
 
-/* CONTROL DE VISTA EN PANTALLAS GRANDES */
+/* MEDIA QUERIES PANTALLAS GRANDES */
 @media (min-width: 768px) {
-    .product-showcase-grid { flex-direction: row; align-items: center; gap: 50px; }
+    .product-showcase-grid { flex-direction: row; align-items: center; gap: 40px; }
     .showcase-text, .showcase-image-wrapper { flex: 1; }
-    .showcase-image-wrapper { height: 350px; }
+    .showcase-image-wrapper { height: 340px; }
 }
 
-/* CONTROL DE VISTA EN SMARTPHONES */
+/* MEDIA QUERIES SMARTPHONES */
 @media (max-width: 767px) {
     .timeline-steps { flex-direction: column; gap: 25px; }
     .timeline-line { display: none; }
