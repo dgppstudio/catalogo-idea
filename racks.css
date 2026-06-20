@@ -54,12 +54,12 @@ body {
 
 .body-lead { font-size: 16px; line-height: 1.6; color: var(--text-muted); margin-bottom: 35px; }
 
-/* CONTENEDOR VIDEO VERTICAL (9:16) CONTROLADO */
+/* AJUSTE PARA FORMATO PANORÁMICO DE VIDEO */
 .video-container-vertical {
     width: 100%;
-    max-width: 360px; /* Ancho idóneo para formato vertical smartphone en cualquier pantalla */
+    max-width: 800px; /* Se alinea impecable con el ancho del texto editorial */
     margin: 0 auto 40px auto;
-    aspect-ratio: 9 / 16;
+    aspect-ratio: 16 / 9; /* <--- Cambiado de 9/16 a 16/9 para que calce perfecto tu clip */
     background-color: #000;
     border-radius: 16px;
     overflow: hidden;
