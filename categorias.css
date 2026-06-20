@@ -82,7 +82,7 @@ body {
 
 .showcase-image-wrapper {
     width: 100%;
-    height: 320px;
+    height: 600px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.04);
@@ -133,7 +133,7 @@ body {
 @media (max-width: 767px) {
     .timeline-steps { flex-direction: column; gap: 30px; }
     .timeline-line { display: none; }
-    .step-image-wrapper { height: 140px; }
+    .step-image-wrapper { height: 600px; }
     .download-row { flex-direction: column; align-items: flex-start; gap: 15px; }
     .btn-download { width: 100%; text-align: center; }
 }
