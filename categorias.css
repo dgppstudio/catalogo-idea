@@ -62,7 +62,7 @@ body {
     width: 100%;
     max-width: 800px; /* Se alinea impecable con el ancho del texto editorial */
     margin: 0 auto 40px auto;
-    aspect-ratio: 16 / 9;  /* <--- Cambiado de 9/16 a 16/9 para que calce perfecto tu clip */
+    aspect-ratio: 9 / 16;  /* <--- Cambiado de 9/16 a 16/9 para que calce perfecto tu clip */
     background-color: #000; 
     border-radius: 16px;
     overflow: hidden;
